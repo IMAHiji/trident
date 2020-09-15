@@ -5,8 +5,12 @@ import Navigation from '../components/Navigation';
 const DefaultLayout = ({ children }: any) => {
     return (
         <Grid container>
-            <Navigation />
-            {children}
+            <Grid container item xs={12} justify="flex-start">
+                <Navigation />
+            </Grid>
+            <Grid container item xs={12}>
+                {children}
+            </Grid>
         </Grid>
     );
 };
