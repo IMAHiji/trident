@@ -1,13 +1,19 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
-import DefaultLayout from './layouts/DefaultLayout';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './containers/Home';
+import Protected from './containers/Protected';
+import UnProtected from './containers/UnProtected';
 
 const App = () => {
     return (
-        <DefaultLayout className="App">
-            <Button>Hello</Button>
-        </DefaultLayout>
+        <Router>
+            <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/protected" component={Protected} />
+                <Route exact path="/unprotected" component={UnProtected} />
+            </Switch>
+        </Router>
     );
 };
-// npx install-peerdeps --dev eslint-config-airbnb
+
 export default App;
