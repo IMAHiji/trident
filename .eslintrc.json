@@ -1,4 +1,4 @@
-module.exports = {
+{
   "extends": [
     "airbnb-typescript",
     "airbnb/hooks",
@@ -33,11 +33,12 @@ module.exports = {
     },
     "rules": {
       "linebreak-style": "off",
+      "explicit-module-boundary-types": "off",
       "prettier/prettier": [
         "error",
         {
           "endOfLine": "auto"
         }
       ]
-    },
+    }
 }
