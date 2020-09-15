@@ -9,5 +9,5 @@ const App = () => {
         </div>
     );
 };
-
+// npx install-peerdeps --dev eslint-config-airbnb
 export default App;
