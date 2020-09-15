@@ -1,12 +1,12 @@
 import React from 'react';
-import { Button } from '@chakra-ui/core';
-import './App.css';
+import Button from '@material-ui/core/Button';
+import DefaultLayout from './layouts/DefaultLayout';
 
 const App = () => {
     return (
-        <div className="App">
+        <DefaultLayout className="App">
             <Button>Hello</Button>
-        </div>
+        </DefaultLayout>
     );
 };
 // npx install-peerdeps --dev eslint-config-airbnb
