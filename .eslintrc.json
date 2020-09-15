@@ -33,7 +33,7 @@
     },
     "rules": {
       "linebreak-style": "off",
-      "explicit-module-boundary-types": "off",
+      "@typescript-eslint/explicit-module-boundary-types":"off",
       "prettier/prettier": [
         "error",
         {
